@@ -1,0 +1,114 @@
+:root {
+    --discord-purple: #5361f1;
+    --discord-pink: #eb449d;
+    --discord-white: #ffffff;
+    --discord-gray: #f0f0f0;
+    --discord-light-green: #50fb85;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "system-ui";
+    background-color: var(--discord-purple);
+  }
+  
+  main {
+    background-color: var(--discord-white);
+    margin: 5rem auto;
+    border-radius: 2rem;
+    display: flex;
+    max-width: 960px;
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    min-height: 600px;
+    flex: 1;
+  }
+  
+  .logo, .login {
+    align-self: flex-start;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sign-up-text {
+    color: gray;
+    font-size: 12px;
+  }
+  
+  input {
+    margin-bottom: 1rem;
+    padding: 0.6rem 1rem;
+    border-radius: 0.4rem;
+    border: none;
+    box-shadow: 0px 1px 3px gray inset;
+    background-color: var(--discord-gray);
+    min-width: 400px;
+  }
+  
+  button {
+    background-color: var(--discord-purple);
+    padding: 0.7rem 1rem;
+    color: var(--discord-gray);
+    border: none;
+    border-radius: .4rem;
+    box-shadow: 10px 10px 35px 0px rgba(83,97,241,.4);
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 2.5rem;
+  }
+  
+  .login {
+    color: gray;
+    font-size: 12px;
+  }
+  
+  .right {
+    background-color: var(--discord-pink);
+    color: var(--discord-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 600px;
+    border-radius: 0 2rem 2rem 0;
+    align-items: center;
+  }
+  
+  .right h1 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .profile {
+    position: relative;
+    min-width: 400px;
+    min-height: 100px;
+    top: 37px;
+    left: 63px;
+  }
+
+  .profile img {
+    width: 100px;
+    border-radius: 9999px;
+    border: 2px solid var(--discord-light-green);
+    padding: .2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
